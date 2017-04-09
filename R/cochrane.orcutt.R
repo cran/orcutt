@@ -52,20 +52,22 @@ function(reg){
     # fitted.value
     regCO$fitted.values <- model.matrix(reg) %*% (as.matrix(regCO$coeff))
     
-    class(regCO) <- "orcutt"
-    
     
     # coeff
     names(regCO$coefficients) <- colnames(X)
     
     # st.err
-    regCO$std.error <- summary(reg)$coeff[,2]
+    regCO$std.error <- summary(regCO)$coeff[,2]
     
     # t value
-    regCO$t.value <- summary(reg)$coeff[,3]
+    regCO$t.value <- summary(regCO)$coeff[,3]
     
     # p value
-    regCO$p.value <- summary(reg)$coeff[,4]       
+    regCO$p.value <- summary(regCO)$coeff[,4]       
+    
+    
+    class(regCO) <- "orcutt"
+    
     
     # formula
     regCO$call <- reg$call    
