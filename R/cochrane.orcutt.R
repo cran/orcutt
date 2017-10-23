@@ -1,5 +1,5 @@
 cochrane.orcutt <-
-function(reg){ 
+function(reg, convergence = 8){ 
     #if (!require('lmtest')) {
     #  stop('The package lmtest was not installed')
     #}
@@ -24,7 +24,7 @@ function(reg){
     rho<-summary(regP)$coeff[1] 
     rho2[2]<-rho 
     i<-2 
-    while (round(rho2[i-1],8)!=round(rho2[i],8)){ 
+    while (round(rho2[i-1],convergence)!=round(rho2[i],convergence)){ 
       XB<-X[-1,]-rho*X[-n,] 
       YB<-Y[-1]-rho*Y[-n] 
       regCO<-lm(YB~XB-1) 
@@ -39,7 +39,7 @@ function(reg){
     } 
     
     regCO$number.interaction<-i-1 
-    regCO$rho <- rho
+    regCO$rho <- rho2[i-1]
     
     regCO$DW <- c(lmtest::dwtest(reg)$statistic, lmtest::dwtest(reg)$p.value,
                   lmtest::dwtest(regCO)$statistic, lmtest::dwtest(regCO)$p.value)
