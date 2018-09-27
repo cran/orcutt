@@ -1,6 +1,6 @@
-c5ca5b223808396c3ac4b272389f8ff0 *DESCRIPTION
+d95e8a79796bf71c94ff5758522a6ab4 *DESCRIPTION
 226aef8a49bac92cc22a7e59d93f929e *NAMESPACE
-f92a88827853548f620eb60ad8e918ad *R/cochrane.orcutt.R
+44e299b493dd2277242cda357bba16ec *R/cochrane.orcutt.R
 cb1ff9da52a5cd0c3676766dae5ca519 *R/orcutt-internal.R
 e459322935404838e03688b44d9f07c4 *R/predict.orcutt.R
 16a563a763c4eeaa43d1b7ffde2ba4f5 *R/print.orcutt.R
@@ -8,10 +8,10 @@ e459322935404838e03688b44d9f07c4 *R/predict.orcutt.R
 4cf9463234f34ade6085749b97dfbafd *R/residual.orcutt.R
 f36e9519bb47ddba159e007143bb644c *R/summary.orcutt.R
 0106950e8ba60f638fe459ac1aad0196 *data/icecream.rda
-1847f800bed4d594c3854f5173d673ef *inst/CITATION
-98fef944c4a2397ef1470619047495e0 *man/cochrane.orcutt.Rd
+98b99edf7d59122d04ede3257d5c4237 *inst/CITATION
+4315b78c8ecd770d2e1473dffbfd6ff2 *man/cochrane.orcutt.Rd
 82af2ad3903c1b568ab66687095e10d6 *man/icecream.Rd
-a77ece8f8ba3d78f36b13759d54c6c23 *man/orcutt-package.Rd
+73f220578cb9ce142ebbc0a0a68a348b *man/orcutt-package.Rd
 6919316a857abf94dd628004265a682a *man/predict.orcutt.Rd
 b871633b1a70a8357d163ce890b86ce0 *man/print.orcutt.Rd
 a34ff45fdd91d7f8d7280fa6b83e7ae8 *man/print.summary.orcutt.Rd

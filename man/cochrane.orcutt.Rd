@@ -7,7 +7,7 @@ Cochrane-Orcutt Estimation
 Interactive method using to solve first order autocorrelation problems. This procedure estimates both autocorrelation and beta coefficients recursively until we reach the convergence (8th decimal). The residuals are computed after estimating Beta using EGLS approach and Rho is estimated using the previous residuals
 }
 \usage{
-cochrane.orcutt(reg, convergence = 8)
+cochrane.orcutt(reg, convergence = 8, max.iter=100)
 }
 \arguments{
   \item{reg}{
@@ -15,6 +15,9 @@ a linear model built with lm function
 }
 \item{convergence}{
 decimal value to reach for convergence, 8 as default
+}
+\item{max.iter}{
+the maximum number of interactions, 100 as default
 }
 }
 \value{

@@ -4,5 +4,5 @@ author = c(person("Spada", "Stefano"),
            person("Matteo", "Quartagno"),
            person("Marco", "Tamburini"),
            person("David", "Robinson")),
-year = 2017,
+year = 2018,
 url = "https://CRAN.R-project.org/package=orcutt")

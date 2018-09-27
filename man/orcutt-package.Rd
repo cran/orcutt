@@ -12,8 +12,8 @@ This package has been implemented to solve first order autocorrelation problems 
 \tabular{ll}{
 Package: \tab orcutt\cr
 Type: \tab Package\cr
-Version: \tab 2.2\cr
-Date: \tab 2017-10-23\cr
+Version: \tab 2.3\cr
+Date: \tab 2018-09-27\cr
 License: \tab GPL-2\cr
 }
 }
